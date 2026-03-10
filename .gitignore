@@ -1,0 +1,81 @@
+# ========================
+# 1. Environment Variables
+# ========================
+# NEVER commit your secrets, API keys, or database passwords!
+
+.env
+.env.local
+.env.*
+
+# EXCEPT the example file (we want this in the repo!)
+!.env.example
+
+# ========================
+# 2. Python & Virtual Envs
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env_venv/
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ========================
+# 3. Testing & Pytest
+# ========================
+.pytest_cache/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+
+# ========================
+# 4. Docker & Database
+# ========================
+# Ignore local database volume mounts if you ever bind them to a local folder
+postgres_data/
+db_data/
+pgdata/
+*.sqlite3
+
+# ========================
+# 5. OS & IDEs
+# ========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# VS Code / PyCharm
+.vscode/
+.idea/
+*.swp
